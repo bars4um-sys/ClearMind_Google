@@ -1,6 +1,6 @@
 import React from 'react';
 import { Calendar, Clock, Sparkles, ArrowRight, Brain, Target, MessageSquare, Heart, CheckCircle2, Shield } from 'lucide-react';
-import authorPhoto from '../assets/author-photo.webp';
+import heroPhoto from '../assets/hero.webp';
 
 interface HeroSectionProps {
   onOpenApplyModal: () => void;
@@ -17,7 +17,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenApplyModal, onOp
           {/* Background image & gradient overlay */}
           <div className="absolute inset-0 z-0">
             <img
-              src={authorPhoto}
+              src={heroPhoto}
               alt="Мила Хабирова — автор курса «Ясный ум»"
               className="w-full h-full object-cover object-center scale-105 filter brightness-[0.92] contrast-[1.02]"
               loading="eager"

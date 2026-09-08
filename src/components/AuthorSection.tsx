@@ -1,6 +1,6 @@
 import React from 'react';
 import { Award, BookOpen, Users, CheckCircle2, Quote, Sparkles, Heart } from 'lucide-react';
-import authorPhoto from '../assets/author-photo.webp';
+import authorPhoto from '../assets/author.webp';
 
 export const AuthorSection: React.FC = () => {
   const stats = [
