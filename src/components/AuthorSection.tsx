@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, BookOpen, Users, CheckCircle2, Quote, Sparkles, Heart } from 'lucide-react';
+import authorPhoto from '../assets/author-photo.webp';
 
 export const AuthorSection: React.FC = () => {
   const stats = [
@@ -25,7 +26,7 @@ export const AuthorSection: React.FC = () => {
           <div className="lg:col-span-5 space-y-6">
             <div className="relative rounded-3xl overflow-hidden bg-[#2D2A26] border border-[#DDD4C4] shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+                src={authorPhoto}
                 alt="Мила Хабирова — автор методики «Ясный ум»"
                 className="w-full h-[420px] object-cover object-center filter brightness-95"
               />
