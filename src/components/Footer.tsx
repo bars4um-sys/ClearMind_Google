@@ -11,12 +11,12 @@ export const Footer: React.FC = () => {
             <span className="text-xl font-bold tracking-widest text-[#FAF6ED] font-serif-heading block">
               ЯСНЫЙ УМ
             </span>
-            <p className="text-xs text-[#A8A092] leading-relaxed">
+            <p className="text-sm text-[#A8A092] leading-relaxed">
               12-недельный онлайн-курс изучения языков и поддержания ясности мышления для взрослых 45+.
               Автор методики — Мила Хабирова.
             </p>
             <div className="pt-1">
-              <span className="text-[11px] text-[#8C8375] block">
+              <span className="text-sm text-[#8C8375] block">
                 © {new Date().getFullYear()} Все права защищены.
               </span>
             </div>
@@ -24,10 +24,10 @@ export const Footer: React.FC = () => {
 
           {/* Col 2: Navigation */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#FAF6ED] mb-3">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-[#FAF6ED] mb-3">
               Разделы лендинга
             </h4>
-            <ul className="space-y-2 text-xs text-[#B8B0A2]">
+            <ul className="space-y-2 text-sm text-[#B8B0A2]">
               <li><a href="#hero-section" className="hover:text-white transition-colors">Главная</a></li>
               <li><a href="#for-whom" className="hover:text-white transition-colors">Для кого курс</a></li>
               <li><a href="#methodology" className="hover:text-white transition-colors">Методика 3 ступеней</a></li>
@@ -39,10 +39,10 @@ export const Footer: React.FC = () => {
 
           {/* Col 3: Legal info */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#FAF6ED] mb-3">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-[#FAF6ED] mb-3">
               Юридическая информация
             </h4>
-            <ul className="space-y-2 text-xs text-[#A8A092]">
+            <ul className="space-y-2 text-sm text-[#A8A092]">
               <li>ИП Хабирова Л. М.</li>
               <li>ОГРНИП: 318774600123456</li>
               <li>ИНН: 772345678901</li>
@@ -54,10 +54,10 @@ export const Footer: React.FC = () => {
 
           {/* Col 4: Contacts & Support */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#FAF6ED] mb-3">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-[#FAF6ED] mb-3">
               Служба заботы
             </h4>
-            <div className="space-y-2.5 text-xs text-[#B8B0A2]">
+            <div className="space-y-2.5 text-sm text-[#B8B0A2]">
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#E5A882]" />
                 <a href="mailto:support@yasnyum.ru" className="hover:text-white">
@@ -70,14 +70,14 @@ export const Footer: React.FC = () => {
                   Telegram: @yasnyum_support
                 </a>
               </div>
-              <p className="text-[11px] text-[#8C8375] pt-1 leading-relaxed">
+              <p className="text-sm text-[#8C8375] pt-1 leading-relaxed">
                 Режим работы поддержки: Пн-Вс с 09:00 до 20:00 (МСК)
               </p>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-[#8C8375] gap-3">
+        <div className="flex flex-col sm:flex-row items-center justify-between text-sm text-[#8C8375] gap-3">
           <p>
             Образовательные материалы носят развивающий и общеобразовательный характер.
           </p>

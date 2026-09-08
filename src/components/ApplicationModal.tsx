@@ -54,13 +54,13 @@ export const ApplicationModal: React.FC<ApplicationModalProps> = ({
         {!isSubmitted ? (
           <div>
             <div className="mb-6">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#A04F3F] bg-[#F7EBE8] px-3 py-1 rounded-full">
+              <span className="text-sm font-bold uppercase tracking-wider text-[#A04F3F] bg-[#F7EBE8] px-3 py-1 rounded-full">
                 БРОНИРОВАНИЕ МЕСТА СО СКИДКОЙ 25%
               </span>
               <h3 className="text-2xl font-bold text-[#24211E] font-serif-heading mt-2">
                 Запись на курс «Ясный ум»
               </h3>
-              <p className="text-xs text-[#6E6558] mt-1">
+              <p className="text-sm text-[#6E6558] mt-1">
                 Старт потока — 15 сентября. Фиксация специальной цены и бонусов.
               </p>
             </div>
@@ -68,7 +68,7 @@ export const ApplicationModal: React.FC<ApplicationModalProps> = ({
             <form onSubmit={handleSubmit} className="space-y-4">
               {/* Tariff Picker */}
               <div>
-                <label className="text-xs font-bold uppercase tracking-wider text-[#665E51] block mb-2">
+                <label className="text-sm font-bold uppercase tracking-wider text-[#665E51] block mb-2">
                   Выберите тариф:
                 </label>
                 <div className="grid grid-cols-3 gap-2">
@@ -83,8 +83,8 @@ export const ApplicationModal: React.FC<ApplicationModalProps> = ({
                           : 'bg-[#FAF8F4] border-[#E6DDCE] text-[#696154] hover:bg-[#F2ECE1]'
                       }`}
                     >
-                      <span className="text-[11px] font-bold block truncate">{plan.name}</span>
-                      <span className="text-xs font-semibold text-[#8E4A3B]">
+                      <span className="text-sm font-bold block truncate">{plan.name}</span>
+                      <span className="text-sm font-semibold text-[#8E4A3B]">
                         {paymentType === 'full'
                           ? `${plan.currentPrice.toLocaleString('ru-RU')} ₽`
                           : `${plan.installmentPrice} ₽/мес`}
@@ -99,7 +99,7 @@ export const ApplicationModal: React.FC<ApplicationModalProps> = ({
                 <button
                   type="button"
                   onClick={() => setPaymentType('full')}
-                  className={`flex-1 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
+                  className={`flex-1 py-1.5 rounded-lg text-sm font-medium transition-all cursor-pointer ${
                     paymentType === 'full' ? 'bg-white text-[#24211E] shadow-xs' : 'text-[#696154]'
                   }`}
                 >
@@ -108,7 +108,7 @@ export const ApplicationModal: React.FC<ApplicationModalProps> = ({
                 <button
                   type="button"
                   onClick={() => setPaymentType('split')}
-                  className={`flex-1 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
+                  className={`flex-1 py-1.5 rounded-lg text-sm font-medium transition-all cursor-pointer ${
                     paymentType === 'split' ? 'bg-white text-[#24211E] shadow-xs' : 'text-[#696154]'
                   }`}
                 >
@@ -119,7 +119,7 @@ export const ApplicationModal: React.FC<ApplicationModalProps> = ({
               {/* Contact Inputs */}
               <div className="space-y-3 pt-1">
                 <div>
-                  <label className="text-xs font-medium text-[#4D473D] block mb-1">
+                  <label className="text-sm font-medium text-[#4D473D] block mb-1">
                     Ваше имя:
                   </label>
                   <div className="relative">
@@ -136,7 +136,7 @@ export const ApplicationModal: React.FC<ApplicationModalProps> = ({
                 </div>
 
                 <div>
-                  <label className="text-xs font-medium text-[#4D473D] block mb-1">
+                  <label className="text-sm font-medium text-[#4D473D] block mb-1">
                     Номер телефона (для Telegram / WhatsApp):
                   </label>
                   <div className="relative">
@@ -153,7 +153,7 @@ export const ApplicationModal: React.FC<ApplicationModalProps> = ({
                 </div>
 
                 <div>
-                  <label className="text-xs font-medium text-[#4D473D] block mb-1">
+                  <label className="text-sm font-medium text-[#4D473D] block mb-1">
                     Электронная почта (для доступа к платформе):
                   </label>
                   <div className="relative">
@@ -194,7 +194,7 @@ export const ApplicationModal: React.FC<ApplicationModalProps> = ({
               </div>
 
               {/* Guarantees */}
-              <div className="flex items-center justify-center gap-2 text-[11px] text-[#7A7163] pt-1">
+              <div className="flex items-center justify-center gap-2 text-sm text-[#7A7163] pt-1">
                 <ShieldCheck className="w-4 h-4 text-[#527056]" />
                 <span>100% гарантия возврата 14 дней • Безопасные платежи</span>
               </div>
@@ -209,16 +209,16 @@ export const ApplicationModal: React.FC<ApplicationModalProps> = ({
             <h3 className="text-2xl font-bold text-[#24211E] font-serif-heading">
               Место успешно забронировано!
             </h3>
-            <p className="text-xs sm:text-sm text-[#5E5649] leading-relaxed">
+            <p className="text-sm sm:text-base text-[#5E5649] leading-relaxed">
               Спасибо, <span className="font-semibold text-[#24211E]">{name || 'дорогой участник'}</span>!
               Мы отправили на ваш email <span className="font-semibold">{email || 'почту'}</span> подтверждение бронирования и инструкцию по входу в личный кабинет.
             </p>
-            <div className="bg-[#FAF7F2] p-4 rounded-2xl border border-[#E6DDCE] text-xs text-[#635B4E]">
+            <div className="bg-[#FAF7F2] p-4 rounded-2xl border border-[#E6DDCE] text-sm text-[#635B4E]">
               В течение 15 минут куратор заботы свяжется с вами в Telegram/WhatsApp для уточнения деталей.
             </div>
             <button
               onClick={handleResetAndClose}
-              className="bg-[#2D2A26] hover:bg-[#1A1816] text-white px-6 py-2.5 rounded-xl text-xs font-medium cursor-pointer"
+              className="bg-[#2D2A26] hover:bg-[#1A1816] text-white px-6 py-2.5 rounded-xl text-sm font-medium cursor-pointer"
             >
               Вернуться к лендингу
             </button>

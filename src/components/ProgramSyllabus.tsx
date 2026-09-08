@@ -31,7 +31,7 @@ export const ProgramSyllabus: React.FC<ProgramSyllabusProps> = ({ onOpenApplyMod
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#A04F3F] bg-[#E8DDD0] px-3.5 py-1 rounded-full mb-3">
+          <div className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-[#A04F3F] bg-[#E8DDD0] px-3.5 py-1 rounded-full mb-3">
             <Sparkles className="w-3.5 h-3.5" />
             <span>12 НЕДЕЛЬ • 3 СТУПЕНИ • 48 ПРАКТИЧЕСКИХ МИКРО-УРОКОВ</span>
           </div>
@@ -70,10 +70,10 @@ export const ProgramSyllabus: React.FC<ProgramSyllabusProps> = ({ onOpenApplyMod
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#A04F3F]">
+                    <span className="text-sm font-bold uppercase tracking-wider text-[#A04F3F]">
                       Модуль {module.moduleNumber}
                     </span>
-                    <span className="text-xs text-[#7A7164]">({module.weeksSpan})</span>
+                    <span className="text-sm text-[#7A7164]">({module.weeksSpan})</span>
                   </div>
                   <h4 className="text-sm font-bold text-[#2A241E] font-serif-heading leading-snug mt-0.5">
                     {module.title}
@@ -87,7 +87,7 @@ export const ProgramSyllabus: React.FC<ProgramSyllabusProps> = ({ onOpenApplyMod
         {/* Active Module Overview Card */}
         <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E2D8C8] shadow-sm mb-8">
           <div className="max-w-3xl">
-            <span className="text-xs font-bold text-[#A04F3F] uppercase tracking-wider">
+            <span className="text-sm font-bold text-[#A04F3F] uppercase tracking-wider">
               Фокус модуля {activeModule.moduleNumber}: {activeModule.weeksSpan}
             </span>
             <h3 className="text-xl sm:text-2xl font-bold text-[#24211E] font-serif-heading mt-1">
@@ -117,16 +117,16 @@ export const ProgramSyllabus: React.FC<ProgramSyllabusProps> = ({ onOpenApplyMod
                     className="w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 cursor-pointer"
                   >
                     <div className="flex items-start sm:items-center gap-3.5">
-                      <span className="w-8 h-8 rounded-xl bg-[#F0E6D8] text-[#8E4A3B] font-mono text-xs font-bold flex items-center justify-center shrink-0">
+                      <span className="w-8 h-8 rounded-xl bg-[#F0E6D8] text-[#8E4A3B] font-mono text-sm font-bold flex items-center justify-center shrink-0">
                         {week.weekNumber < 10 ? `0${week.weekNumber}` : week.weekNumber}
                       </span>
                       <div>
                         <div className="flex flex-wrap items-center gap-2">
-                          <span className="text-xs font-semibold text-[#8E4A3B]">Неделя {week.weekNumber}</span>
-                          <span className="text-xs text-[#7A7163] hidden sm:inline">•</span>
-                          <span className="text-xs text-[#6B6355]">{week.subtitle}</span>
+                          <span className="text-sm font-semibold text-[#8E4A3B]">Неделя {week.weekNumber}</span>
+                          <span className="text-sm text-[#7A7163] hidden sm:inline">•</span>
+                          <span className="text-sm text-[#6B6355]">{week.subtitle}</span>
                         </div>
-                        <h4 className="text-base sm:text-lg font-bold text-[#2A241E] font-serif-heading mt-0.5">
+                        <h4 className="text-lg sm:text-xl font-bold text-[#2A241E] font-serif-heading mt-0.5">
                           {week.title}
                         </h4>
                       </div>
@@ -143,19 +143,19 @@ export const ProgramSyllabus: React.FC<ProgramSyllabusProps> = ({ onOpenApplyMod
                       {/* Dual Outcome badges */}
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
                         <div className="bg-white p-3.5 rounded-xl border border-[#E8DFC F]">
-                          <span className="text-[11px] font-bold text-[#8E4A3B] uppercase tracking-wider block">
+                          <span className="text-sm font-bold text-[#8E4A3B] uppercase tracking-wider block">
                             Когнитивный фокус:
                           </span>
-                          <p className="text-xs sm:text-sm text-[#4E473D] mt-0.5 font-medium">
+                          <p className="text-sm sm:text-base text-[#4E473D] mt-0.5 font-medium">
                             {week.cognitiveFocus}
                           </p>
                         </div>
 
                         <div className="bg-white p-3.5 rounded-xl border border-[#E8DFC F]">
-                          <span className="text-[11px] font-bold text-[#527056] uppercase tracking-wider block">
+                          <span className="text-sm font-bold text-[#527056] uppercase tracking-wider block">
                             Языковой результат недели:
                           </span>
-                          <p className="text-xs sm:text-sm text-[#4E473D] mt-0.5 font-medium">
+                          <p className="text-sm sm:text-base text-[#4E473D] mt-0.5 font-medium">
                             {week.languageOutcome}
                           </p>
                         </div>
@@ -163,12 +163,12 @@ export const ProgramSyllabus: React.FC<ProgramSyllabusProps> = ({ onOpenApplyMod
 
                       {/* Topics List */}
                       <div>
-                        <h5 className="text-xs font-bold text-[#736B5E] uppercase tracking-wider mb-2">
+                        <h5 className="text-sm font-bold text-[#736B5E] uppercase tracking-wider mb-2">
                           Темы практических уроков недели:
                         </h5>
                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                           {week.topics.map((topic, tIdx) => (
-                            <li key={tIdx} className="flex items-start gap-2 text-xs sm:text-sm text-[#544D42]">
+                            <li key={tIdx} className="flex items-start gap-2 text-sm sm:text-base text-[#544D42]">
                               <CheckCircle2 className="w-4 h-4 text-[#8E4A3B] shrink-0 mt-0.5" />
                               <span>{topic}</span>
                             </li>
@@ -177,7 +177,7 @@ export const ProgramSyllabus: React.FC<ProgramSyllabusProps> = ({ onOpenApplyMod
                       </div>
 
                       {/* Practical Homework */}
-                      <div className="bg-[#F2ECE1] p-3 rounded-xl border border-[#E0D5C3] text-xs text-[#5C5346] flex items-center gap-2">
+                      <div className="bg-[#F2ECE1] p-3 rounded-xl border border-[#E0D5C3] text-sm text-[#5C5346] flex items-center gap-2">
                         <span className="font-semibold text-[#3D372F]">Практическое задание:</span>
                         <span>{week.homework}</span>
                       </div>
@@ -197,7 +197,7 @@ export const ProgramSyllabus: React.FC<ProgramSyllabusProps> = ({ onOpenApplyMod
               <h4 className="text-base font-bold text-[#2A241E] font-serif-heading">
                 Хотите изучить полную 24-страничную программу со всеми уроками?
               </h4>
-              <p className="text-xs text-[#6B6254] mt-0.5">
+              <p className="text-sm text-[#6B6254] mt-0.5">
                 Скачайте подробный PDF-буклет с примерами когнитивных упражнений и расписанием.
               </p>
             </div>
@@ -205,7 +205,7 @@ export const ProgramSyllabus: React.FC<ProgramSyllabusProps> = ({ onOpenApplyMod
 
           <button
             onClick={onOpenGuideModal}
-            className="bg-[#2D2A26] hover:bg-[#1A1816] text-[#F3EFE6] px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium shrink-0 transition-colors flex items-center gap-2 cursor-pointer"
+            className="bg-[#2D2A26] hover:bg-[#1A1816] text-[#F3EFE6] px-5 py-2.5 rounded-xl text-sm sm:text-base font-medium shrink-0 transition-colors flex items-center gap-2 cursor-pointer"
           >
             <Download className="w-4 h-4" />
             <span>Скачать программу (PDF)</span>

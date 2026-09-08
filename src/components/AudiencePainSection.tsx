@@ -38,7 +38,7 @@ export const AudiencePainSection: React.FC<AudiencePainSectionProps> = ({ onOpen
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#A04F3F] bg-[#E8DDD0] px-3.5 py-1 rounded-full mb-3">
+          <div className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-[#A04F3F] bg-[#E8DDD0] px-3.5 py-1 rounded-full mb-3">
             <Sparkles className="w-3.5 h-3.5" />
             <span>ДЛЯ ВЗРОСЛЫХ УЧАЩИХСЯ 45+</span>
           </div>
@@ -66,10 +66,10 @@ export const AudiencePainSection: React.FC<AudiencePainSectionProps> = ({ onOpen
                     <XCircle className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-base sm:text-lg font-bold text-[#2C2722] font-serif-heading">
+                    <h4 className="text-lg sm:text-xl font-bold text-[#2C2722] font-serif-heading">
                       {item.problem}
                     </h4>
-                    <p className="text-xs sm:text-sm text-[#736A5E] mt-1 leading-relaxed">
+                    <p className="text-sm sm:text-base text-[#736A5E] mt-1 leading-relaxed">
                       {item.problemDesc}
                     </p>
                   </div>
@@ -78,7 +78,7 @@ export const AudiencePainSection: React.FC<AudiencePainSectionProps> = ({ onOpen
                 {/* Divider arrow */}
                 <div className="flex items-center gap-2 py-1 pl-11">
                   <div className="h-[1px] bg-[#E0D5C4] flex-grow" />
-                  <span className="text-[11px] font-medium text-[#7D7364] uppercase tracking-wider">
+                  <span className="text-sm font-medium text-[#7D7364] uppercase tracking-wider">
                     В курсе «Ясный ум»:
                   </span>
                   <div className="h-[1px] bg-[#E0D5C4] flex-grow" />
@@ -90,10 +90,10 @@ export const AudiencePainSection: React.FC<AudiencePainSectionProps> = ({ onOpen
                     <CheckCircle2 className="w-4 h-4" />
                   </div>
                   <div>
-                    <h5 className="text-sm font-bold text-[#223324] font-serif-heading">
+                    <h5 className="text-base font-bold text-[#223324] font-serif-heading">
                       {item.solution}
                     </h5>
-                    <p className="text-xs text-[#526354] mt-0.5 leading-relaxed">
+                    <p className="text-sm text-[#526354] mt-0.5 leading-relaxed">
                       {item.solutionDesc}
                     </p>
                   </div>
@@ -110,10 +110,10 @@ export const AudiencePainSection: React.FC<AudiencePainSectionProps> = ({ onOpen
               <Brain className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="text-base sm:text-lg font-bold text-[#24211E] font-serif-heading">
+              <h4 className="text-lg sm:text-xl font-bold text-[#24211E] font-serif-heading">
                 Нейропластичность взрослого мозга доказана научно
               </h4>
-              <p className="text-xs sm:text-sm text-[#635C51] mt-1 leading-relaxed max-w-2xl">
+              <p className="text-sm sm:text-base text-[#635C51] mt-1 leading-relaxed max-w-2xl">
                 Изучение языка в возрасте 45–70 лет создает мощный когнитивный резерв, снижает риск возрастной деменции на 4,5 года и повышает общую скорость мышления в повседневной жизни.
               </p>
             </div>

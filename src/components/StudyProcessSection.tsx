@@ -40,7 +40,7 @@ export const StudyProcessSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#A04F3F] bg-[#EFE7DA] px-3.5 py-1 rounded-full mb-3">
+          <div className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-[#A04F3F] bg-[#EFE7DA] px-3.5 py-1 rounded-full mb-3">
             <Sparkles className="w-3.5 h-3.5" />
             <span>КАК ПРОХОДИТ ОБУЧЕНИЕ</span>
           </div>
@@ -55,7 +55,7 @@ export const StudyProcessSection: React.FC = () => {
         </div>
 
         {/* 5 Process Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {steps.map((item, index) => {
             const Icon = item.icon;
             return (
@@ -68,15 +68,15 @@ export const StudyProcessSection: React.FC = () => {
                     <div className="w-10 h-10 rounded-xl bg-[#F4EDE2] text-[#8E4A3B] flex items-center justify-center">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className="font-mono text-xs font-bold text-[#A59C8F]">
+                    <span className="font-mono text-sm font-bold text-[#A59C8F]">
                       {item.stepNum}
                     </span>
                   </div>
 
-                  <h3 className="text-base sm:text-lg font-bold text-[#2A241E] font-serif-heading leading-snug">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#2A241E] font-serif-heading leading-snug">
                     {item.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#665E51] mt-2 leading-relaxed">
+                  <p className="text-sm sm:text-base text-[#665E51] mt-2 leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -91,7 +91,7 @@ export const StudyProcessSection: React.FC = () => {
             <div className="w-7 h-7 rounded-full bg-[#527056] text-white flex items-center justify-center shrink-0">
               <Check className="w-4 h-4" />
             </div>
-            <span className="text-xs sm:text-sm font-medium text-[#383127]">
+            <span className="text-sm sm:text-base font-medium text-[#383127]">
               Доступ с любых устройств: компьютер, планшет, телефон
             </span>
           </div>
@@ -100,7 +100,7 @@ export const StudyProcessSection: React.FC = () => {
             <div className="w-7 h-7 rounded-full bg-[#527056] text-white flex items-center justify-center shrink-0">
               <Check className="w-4 h-4" />
             </div>
-            <span className="text-xs sm:text-sm font-medium text-[#383127]">
+            <span className="text-sm sm:text-base font-medium text-[#383127]">
               Записи всех встреч навсегда сохраняются в кабинете
             </span>
           </div>
@@ -109,7 +109,7 @@ export const StudyProcessSection: React.FC = () => {
             <div className="w-7 h-7 rounded-full bg-[#527056] text-white flex items-center justify-center shrink-0">
               <Check className="w-4 h-4" />
             </div>
-            <span className="text-xs sm:text-sm font-medium text-[#383127]">
+            <span className="text-sm sm:text-base font-medium text-[#383127]">
               Служба заботы на связи 7 дней в неделю
             </span>
           </div>

@@ -46,20 +46,20 @@ export const FreeGuideModal: React.FC<FreeGuideModalProps> = ({ isOpen, onClose 
               <div className="w-12 h-12 rounded-2xl bg-[#F4EDE2] text-[#8E4A3B] flex items-center justify-center mx-auto mb-3">
                 <BookOpen className="w-6 h-6" />
               </div>
-              <span className="text-[11px] font-bold uppercase tracking-wider text-[#A04F3F] bg-[#F7EBE8] px-3 py-0.5 rounded-full">
+              <span className="text-sm font-bold uppercase tracking-wider text-[#A04F3F] bg-[#F7EBE8] px-3 py-0.5 rounded-full">
                 БЕСПЛАТНЫЙ ПОДАРОК
               </span>
               <h3 className="text-xl sm:text-2xl font-bold text-[#24211E] font-serif-heading mt-2">
                 Гайд «10 способов запоминать слова в 3 раза быстрее»
               </h3>
-              <p className="text-xs text-[#6E6558] mt-1.5 leading-relaxed">
+              <p className="text-sm text-[#6E6558] mt-1.5 leading-relaxed">
                 + Полная программа 12 недель курса и чек-лист когнитивной утренней разминки от Милы Хабировой.
               </p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-3.5">
               <div>
-                <label className="text-xs font-medium text-[#4D473D] block mb-1">
+                <label className="text-sm font-medium text-[#4D473D] block mb-1">
                   Ваше имя:
                 </label>
                 <div className="relative">
@@ -76,7 +76,7 @@ export const FreeGuideModal: React.FC<FreeGuideModalProps> = ({ isOpen, onClose 
               </div>
 
               <div>
-                <label className="text-xs font-medium text-[#4D473D] block mb-1">
+                <label className="text-sm font-medium text-[#4D473D] block mb-1">
                   Email или Telegram (куда прислать PDF):
                 </label>
                 <div className="relative">
@@ -109,7 +109,7 @@ export const FreeGuideModal: React.FC<FreeGuideModalProps> = ({ isOpen, onClose 
                 </button>
               </div>
 
-              <div className="text-[11px] text-center text-[#7F7668]">
+              <div className="text-sm text-center text-[#7F7668]">
                 Без спама. Только полезные материалы по методике.
               </div>
             </form>
@@ -122,13 +122,13 @@ export const FreeGuideModal: React.FC<FreeGuideModalProps> = ({ isOpen, onClose 
             <h3 className="text-2xl font-bold text-[#24211E] font-serif-heading">
               Материалы уже летят к вам!
             </h3>
-            <p className="text-xs sm:text-sm text-[#5E5649] leading-relaxed">
+            <p className="text-sm sm:text-base text-[#5E5649] leading-relaxed">
               Мы отправили гайд по запоминанию и PDF-программу курса на указанный контакт{' '}
               <span className="font-semibold text-[#24211E]">{contact}</span>.
             </p>
             <button
               onClick={handleResetAndClose}
-              className="bg-[#2D2A26] hover:bg-[#1A1816] text-white px-6 py-2.5 rounded-xl text-xs font-medium cursor-pointer"
+              className="bg-[#2D2A26] hover:bg-[#1A1816] text-white px-6 py-2.5 rounded-xl text-sm font-medium cursor-pointer"
             >
               Отлично, спасибо
             </button>

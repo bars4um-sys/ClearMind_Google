@@ -48,19 +48,19 @@ export const Header: React.FC<HeaderProps> = ({ onOpenApplyModal, onOpenGuideMod
   return (
     <>
       {/* Top Notification / Urgency Bar */}
-      <div id="top-announcement-bar" className="bg-[#2D2A26] text-[#F3EFE6] text-xs sm:text-sm py-2 px-4 transition-all">
+      <div id="top-announcement-bar" className="bg-[#2D2A26] text-[#F3EFE6] text-sm sm:text-base py-2 px-4 transition-all">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-[#A04F3F] text-white">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-sm font-semibold bg-[#A04F3F] text-white">
               Старт 15 сентября
             </span>
             <span className="hidden sm:inline text-[#D5CEBF]">
               Раннее бронирование: скидка 25% на все тарифы
             </span>
-            <span className="sm:hidden text-xs text-[#D5CEBF]">Скидка 25% на все тарифы</span>
+            <span className="sm:hidden text-sm text-[#D5CEBF]">Скидка 25% на все тарифы</span>
           </div>
 
-          <div className="flex items-center gap-3 ml-auto text-xs">
+          <div className="flex items-center gap-3 ml-auto text-sm">
             <div className="flex items-center gap-1 text-[#E0D7C6]">
               <Clock className="w-3.5 h-3.5 text-[#E5A882]" />
               <span className="font-mono font-medium">
@@ -73,7 +73,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenApplyModal, onOpenGuideMod
             <button
               id="top-bar-guide-btn"
               onClick={onOpenGuideModal}
-              className="text-xs text-[#F3EFE6] underline underline-offset-2 hover:text-[#E5A882] transition-colors cursor-pointer"
+              className="text-sm text-[#F3EFE6] underline underline-offset-2 hover:text-[#E5A882] transition-colors cursor-pointer"
             >
               Бесплатный гайд памяти
             </button>
@@ -96,7 +96,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenApplyModal, onOpenGuideMod
             <span className="text-xl sm:text-2xl font-bold tracking-widest text-[#24211E] font-serif-heading transition-colors group-hover:text-[#A04F3F]">
               ЯСНЫЙ УМ
             </span>
-            <span className="text-[11px] sm:text-xs text-[#7A7265] tracking-wide -mt-0.5">
+            <span className="text-sm text-[#7A7265] tracking-wide -mt-0.5">
               с Милой Хабировой
             </span>
           </a>
@@ -132,7 +132,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenApplyModal, onOpenGuideMod
             <button
               id="mobile-join-btn-top"
               onClick={() => onOpenApplyModal()}
-              className="bg-[#A04F3F] text-white px-3 py-1.5 rounded-md text-xs font-medium"
+              className="bg-[#A04F3F] text-white px-3 py-1.5 rounded-md text-sm font-medium"
             >
               Записаться
             </button>
@@ -184,7 +184,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenApplyModal, onOpenGuideMod
                   setMobileMenuOpen(false);
                   onOpenGuideModal();
                 }}
-                className="w-full bg-[#ECE5D8] text-[#4A4338] py-2.5 rounded-lg text-xs font-medium text-center"
+                className="w-full bg-[#ECE5D8] text-[#4A4338] py-2.5 rounded-lg text-sm font-medium text-center"
               >
                 Получить бесплатный тест и гайд
               </button>

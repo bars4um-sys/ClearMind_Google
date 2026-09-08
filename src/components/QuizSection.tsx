@@ -37,7 +37,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({ onOpenApplyModal, onOp
         <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#E3D9C9] shadow-md relative overflow-hidden">
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-8">
-            <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#A04F3F] bg-[#F4EDE2] px-3.5 py-1 rounded-full mb-3">
+            <div className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-[#A04F3F] bg-[#F4EDE2] px-3.5 py-1 rounded-full mb-3">
               <Sparkles className="w-3.5 h-3.5" />
               <span>КОГНИТИВНЫЙ ОНЛАЙН-ТЕСТ</span>
             </div>
@@ -45,7 +45,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({ onOpenApplyModal, onOp
               Определите ваш ведущий тип памяти <br className="hidden sm:inline" />
               и идеальный темп обучения
             </h2>
-            <p className="mt-2 text-xs sm:text-sm text-[#6B6356]">
+            <p className="mt-2 text-sm sm:text-base text-[#6B6356]">
               Ответьте на 4 простых вопроса за 1 минуту и получите персональные рекомендации
               + бесплатный PDF-гайд по когнитивным техникам.
             </p>
@@ -54,7 +54,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({ onOpenApplyModal, onOp
           {!isCompleted ? (
             <div className="space-y-6">
               {/* Progress bar */}
-              <div className="flex items-center justify-between text-xs text-[#7A7163] font-medium border-b border-[#EDE5D8] pb-3">
+              <div className="flex items-center justify-between text-sm text-[#7A7163] font-medium border-b border-[#EDE5D8] pb-3">
                 <span>
                   Вопрос {currentQuestionIndex + 1} из {QUIZ_QUESTIONS.length}
                 </span>
@@ -69,7 +69,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({ onOpenApplyModal, onOp
                   {currentQuestion.question}
                 </h3>
                 {currentQuestion.subtitle && (
-                  <p className="text-xs text-[#786F62] mt-1">{currentQuestion.subtitle}</p>
+                  <p className="text-sm text-[#786F62] mt-1">{currentQuestion.subtitle}</p>
                 )}
               </div>
 
@@ -82,14 +82,14 @@ export const QuizSection: React.FC<QuizSectionProps> = ({ onOpenApplyModal, onOp
                     className="text-left p-4 rounded-2xl bg-[#FAF7F2] border border-[#E6DDCE] hover:border-[#A04F3F] hover:bg-[#F5EFE6] transition-all cursor-pointer group"
                   >
                     <div className="flex items-start gap-3">
-                      <span className="w-6 h-6 rounded-full bg-[#EDE4D6] text-[#736A5E] group-hover:bg-[#A04F3F] group-hover:text-white text-xs font-bold flex items-center justify-center shrink-0 transition-colors">
+                      <span className="w-6 h-6 rounded-full bg-[#EDE4D6] text-[#736A5E] group-hover:bg-[#A04F3F] group-hover:text-white text-sm font-bold flex items-center justify-center shrink-0 transition-colors">
                         {String.fromCharCode(65 + idx)}
                       </span>
                       <div>
-                        <div className="text-xs sm:text-sm font-semibold text-[#2A241E] group-hover:text-[#8E4A3B]">
+                        <div className="text-sm sm:text-base font-semibold text-[#2A241E] group-hover:text-[#8E4A3B]">
                           {option.text}
                         </div>
-                        <div className="text-[11px] text-[#7A7163] mt-0.5">
+                        <div className="text-sm text-[#7A7163] mt-0.5">
                           {option.description}
                         </div>
                       </div>
@@ -103,7 +103,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({ onOpenApplyModal, onOp
                 <div className="pt-2 text-left">
                   <button
                     onClick={() => setCurrentQuestionIndex((prev) => prev - 1)}
-                    className="text-xs text-[#7A7163] hover:text-[#2A241E] cursor-pointer"
+                    className="text-sm text-[#7A7163] hover:text-[#2A241E] cursor-pointer"
                   >
                     ← Вернуться к предыдущему вопросу
                   </button>
@@ -118,13 +118,13 @@ export const QuizSection: React.FC<QuizSectionProps> = ({ onOpenApplyModal, onOp
               </div>
 
               <div className="max-w-xl mx-auto">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#527056]">
+                <span className="text-sm font-bold uppercase tracking-wider text-[#527056]">
                   ВАШ РЕЗУЛЬТАТ: АССОЦИАТИВНО-СМЫСЛОВОЙ ПРОФИЛЬ
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-bold text-[#24211E] font-serif-heading mt-1">
                   Методика «Ясный ум» подходит вам на 100%
                 </h3>
-                <p className="text-xs sm:text-sm text-[#5C5549] mt-3 leading-relaxed">
+                <p className="text-sm sm:text-base text-[#5C5549] mt-3 leading-relaxed">
                   Ваш мозг быстрее всего фиксирует информацию через эмоциональные и смысловые связки.
                   Вам категорически противопоказаны школьная зубрежка и грамматические таблицы.
                   20-минутные микро-сессии позволят вам комфортно выйти на беглую разговорную речь.
@@ -137,7 +137,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({ onOpenApplyModal, onOp
                   <h4 className="text-sm font-bold text-[#2A241E]">
                     Подарок: Гайд «10 способов запоминать слова в 3 раза быстрее»
                   </h4>
-                  <p className="text-xs text-[#6E6659] mt-0.5">
+                  <p className="text-sm text-[#6E6659] mt-0.5">
                     Мы подготовили для вас практический конспект с упражнениями для утренней когнитивной разминки.
                   </p>
                 </div>
@@ -154,7 +154,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({ onOpenApplyModal, onOp
 
                 <button
                   onClick={handleReset}
-                  className="text-xs text-[#7A7163] hover:text-[#2A241E] flex items-center gap-1 cursor-pointer py-2"
+                  className="text-sm text-[#7A7163] hover:text-[#2A241E] flex items-center gap-1 cursor-pointer py-2"
                 >
                   <RotateCcw className="w-3.5 h-3.5" />
                   <span>Пройти заново</span>

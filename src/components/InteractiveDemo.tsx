@@ -69,11 +69,11 @@ export const InteractiveDemo: React.FC = () => {
         <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#E4DBCB] shadow-md relative overflow-hidden">
           {/* Decorative Tag */}
           <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
-            <div className="inline-flex items-center gap-2 bg-[#F4EDE2] text-[#8E4A3B] px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 bg-[#F4EDE2] text-[#8E4A3B] px-3.5 py-1 rounded-full text-sm font-semibold uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5" />
               <span>ИНТЕРАКТИВНЫЙ ТЕСТ МЕТОДИКИ ЗА 90 СЕКУНД</span>
             </div>
-            <span className="text-xs text-[#7A7163]">Без оценок • Только для вашего удовольствия</span>
+            <span className="text-sm text-[#7A7163]">Без оценок • Только для вашего удовольствия</span>
           </div>
 
           {/* Step 1: Intro */}
@@ -89,19 +89,19 @@ export const InteractiveDemo: React.FC = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                 <div className="bg-[#FAF7F2] p-4 rounded-xl border border-[#ECE4D6]">
-                  <span className="text-xs font-bold text-[#8E4A3B]">Шаг 1</span>
+                  <span className="text-sm font-bold text-[#8E4A3B]">Шаг 1</span>
                   <p className="text-sm font-medium text-[#2C2721] mt-1">
                     Связываем слово с ярким живым образом
                   </p>
                 </div>
                 <div className="bg-[#FAF7F2] p-4 rounded-xl border border-[#ECE4D6]">
-                  <span className="text-xs font-bold text-[#4A676E]">Шаг 2</span>
+                  <span className="text-sm font-bold text-[#4A676E]">Шаг 2</span>
                   <p className="text-sm font-medium text-[#2C2721] mt-1">
                     Подключаем смысловой контекст
                   </p>
                 </div>
                 <div className="bg-[#FAF7F2] p-4 rounded-xl border border-[#ECE4D6]">
-                  <span className="text-xs font-bold text-[#4B6B4E]">Шаг 3</span>
+                  <span className="text-sm font-bold text-[#4B6B4E]">Шаг 3</span>
                   <p className="text-sm font-medium text-[#2C2721] mt-1">
                     Мгновенно проверяем долговременный след
                   </p>
@@ -126,7 +126,7 @@ export const InteractiveDemo: React.FC = () => {
             <div className="space-y-6">
               <div className="flex items-center justify-between border-b border-[#ECE4D8] pb-4">
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-bold text-[#8E4A3B] uppercase tracking-wider">
+                  <span className="text-sm font-bold text-[#8E4A3B] uppercase tracking-wider">
                     Слово {activeWordIndex + 1} из {demoWords.length}
                   </span>
                 </div>
@@ -176,7 +176,7 @@ export const InteractiveDemo: React.FC = () => {
                     <p className="text-[#595145] mt-0.5">{demoWords[activeWordIndex].meaningHook}</p>
                   </div>
 
-                  <div className="text-xs text-[#736B5E] italic pt-1">
+                  <div className="text-sm text-[#736B5E] italic pt-1">
                     Пример: {demoWords[activeWordIndex].sentence}
                   </div>
                 </div>
@@ -187,7 +187,7 @@ export const InteractiveDemo: React.FC = () => {
                 <button
                   disabled={activeWordIndex === 0}
                   onClick={() => setActiveWordIndex((prev) => prev - 1)}
-                  className="text-xs text-[#736B5E] hover:text-[#2A241E] disabled:opacity-30 disabled:pointer-events-none px-3 py-2 cursor-pointer"
+                  className="text-sm text-[#736B5E] hover:text-[#2A241E] disabled:opacity-30 disabled:pointer-events-none px-3 py-2 cursor-pointer"
                 >
                   ← Предыдущее слово
                 </button>
@@ -220,7 +220,7 @@ export const InteractiveDemo: React.FC = () => {
                 <h4 className="text-xl sm:text-2xl font-bold text-[#24211E] font-serif-heading">
                   Проверка: выберите правильное значение для каждого слова
                 </h4>
-                <p className="text-xs sm:text-sm text-[#635C51] mt-1">
+                <p className="text-sm sm:text-base text-[#635C51] mt-1">
                   Вспомните созданный образ-якорь. Заметьте, как быстро мозг выдает нужную ассоциацию!
                 </p>
               </div>
@@ -240,7 +240,7 @@ export const InteractiveDemo: React.FC = () => {
                       <button
                         key={opt}
                         onClick={() => handleSelectAnswer(0, opt)}
-                        className={`text-left px-3.5 py-2.5 rounded-xl text-xs sm:text-sm transition-all cursor-pointer ${
+                        className={`text-left px-3.5 py-2.5 rounded-xl text-sm sm:text-base transition-all cursor-pointer ${
                           quizAnswers[0] === opt
                             ? 'bg-[#A04F3F] text-white font-medium shadow-xs'
                             : 'bg-white border border-[#E0D5C3] text-[#423C33] hover:bg-[#F2ECE1]'
@@ -266,7 +266,7 @@ export const InteractiveDemo: React.FC = () => {
                       <button
                         key={opt}
                         onClick={() => handleSelectAnswer(1, opt)}
-                        className={`text-left px-3.5 py-2.5 rounded-xl text-xs sm:text-sm transition-all cursor-pointer ${
+                        className={`text-left px-3.5 py-2.5 rounded-xl text-sm sm:text-base transition-all cursor-pointer ${
                           quizAnswers[1] === opt
                             ? 'bg-[#A04F3F] text-white font-medium shadow-xs'
                             : 'bg-white border border-[#E0D5C3] text-[#423C33] hover:bg-[#F2ECE1]'
@@ -292,7 +292,7 @@ export const InteractiveDemo: React.FC = () => {
                       <button
                         key={opt}
                         onClick={() => handleSelectAnswer(2, opt)}
-                        className={`text-left px-3.5 py-2.5 rounded-xl text-xs sm:text-sm transition-all cursor-pointer ${
+                        className={`text-left px-3.5 py-2.5 rounded-xl text-sm sm:text-base transition-all cursor-pointer ${
                           quizAnswers[2] === opt
                             ? 'bg-[#A04F3F] text-white font-medium shadow-xs'
                             : 'bg-white border border-[#E0D5C3] text-[#423C33] hover:bg-[#F2ECE1]'
@@ -306,7 +306,7 @@ export const InteractiveDemo: React.FC = () => {
               </div>
 
               {feedback && (
-                <div className="p-3 bg-[#FBEAE8] text-[#8E3F33] rounded-xl text-xs font-medium">
+                <div className="p-3 bg-[#FBEAE8] text-[#8E3F33] rounded-xl text-sm font-medium">
                   {feedback}
                 </div>
               )}
@@ -314,7 +314,7 @@ export const InteractiveDemo: React.FC = () => {
               <div className="flex items-center justify-between pt-2">
                 <button
                   onClick={handleReset}
-                  className="text-xs text-[#736B5E] hover:text-[#2A241E] flex items-center gap-1 cursor-pointer"
+                  className="text-sm text-[#736B5E] hover:text-[#2A241E] flex items-center gap-1 cursor-pointer"
                 >
                   <RotateCcw className="w-3.5 h-3.5" />
                   <span>Пройти заново</span>
@@ -360,7 +360,7 @@ export const InteractiveDemo: React.FC = () => {
 
                 <button
                   onClick={handleReset}
-                  className="text-xs text-[#736B5E] hover:text-[#2A241E] underline underline-offset-4 cursor-pointer"
+                  className="text-sm text-[#736B5E] hover:text-[#2A241E] underline underline-offset-4 cursor-pointer"
                 >
                   Попробовать еще раз
                 </button>

@@ -18,7 +18,7 @@ export const TestimonialsSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#A04F3F] bg-[#EFE7DA] px-3.5 py-1 rounded-full mb-3">
+          <div className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-[#A04F3F] bg-[#EFE7DA] px-3.5 py-1 rounded-full mb-3">
             <Sparkles className="w-3.5 h-3.5" />
             <span>ИСТОРИИ ВЫПУСКНИКОВ 45+</span>
           </div>
@@ -51,7 +51,7 @@ export const TestimonialsSection: React.FC = () => {
                       <h4 className="text-base font-bold text-[#2A241E] font-serif-heading">
                         {item.name}, {item.age} лет
                       </h4>
-                      <p className="text-xs text-[#736B5E]">
+                      <p className="text-sm text-[#736B5E]">
                         {item.profession} • {item.city}
                       </p>
                     </div>
@@ -65,19 +65,19 @@ export const TestimonialsSection: React.FC = () => {
                 </div>
 
                 {/* Quote Highlight */}
-                <p className="text-sm font-semibold font-serif italic text-[#383128] leading-relaxed mb-3">
+                <p className="text-base font-semibold font-serif italic text-[#383128] leading-relaxed mb-3">
                   {item.quote}
                 </p>
 
                 {/* Full story */}
-                <p className="text-xs sm:text-sm text-[#5C5447] leading-relaxed mb-4">
+                <p className="text-sm sm:text-base text-[#5C5447] leading-relaxed mb-4">
                   {item.story}
                 </p>
               </div>
 
               <div className="space-y-3 pt-3 border-t border-[#EDE5D8]">
                 {/* Key Result Badge */}
-                <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#E8DFC F] flex items-start gap-2 text-xs text-[#3E382E]">
+                <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#E8DFC F] flex items-start gap-2 text-sm text-[#3E382E]">
                   <CheckCircle2 className="w-4 h-4 text-[#527056] shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-[#24211E]">Результат 12 недель: </span>
@@ -89,7 +89,7 @@ export const TestimonialsSection: React.FC = () => {
                 {item.audioDuration && (
                   <button
                     onClick={() => toggleAudio(item.id)}
-                    className={`w-full flex items-center justify-between p-2.5 rounded-xl text-xs transition-colors cursor-pointer ${
+                    className={`w-full flex items-center justify-between p-2.5 rounded-xl text-sm transition-colors cursor-pointer ${
                       playingAudioId === item.id
                         ? 'bg-[#A04F3F] text-white'
                         : 'bg-[#F2ECE1] text-[#4A4338] hover:bg-[#EBE2D4]'
@@ -103,7 +103,7 @@ export const TestimonialsSection: React.FC = () => {
                         {playingAudioId === item.id ? 'Воспроизведение отзыва...' : 'Слушать аудио-отзыв'}
                       </span>
                     </div>
-                    <span className="font-mono text-[11px] opacity-80">{item.audioDuration}</span>
+                    <span className="font-mono text-sm opacity-80">{item.audioDuration}</span>
                   </button>
                 )}
               </div>

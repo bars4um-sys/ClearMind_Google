@@ -55,7 +55,7 @@ export const MethodologySection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#A04F3F] bg-[#EFE7DA] px-3.5 py-1 rounded-full mb-3">
+          <div className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-[#A04F3F] bg-[#EFE7DA] px-3.5 py-1 rounded-full mb-3">
             <Sparkles className="w-3.5 h-3.5" />
             <span>НАУЧНО ОБОСНОВАННАЯ СИСТЕМА</span>
           </div>
@@ -82,7 +82,7 @@ export const MethodologySection: React.FC = () => {
                     <div className={`w-12 h-12 rounded-2xl ${pillar.iconColor} flex items-center justify-center shrink-0 shadow-sm`}>
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-xs font-mono font-bold text-[#736B5E] tracking-wider uppercase">
+                    <span className="text-sm font-mono font-bold text-[#736B5E] tracking-wider uppercase">
                       Ступень 0{index + 1}
                     </span>
                   </div>
@@ -90,13 +90,13 @@ export const MethodologySection: React.FC = () => {
                   <h3 className="text-xl sm:text-2xl font-bold text-[#27221C] font-serif-heading">
                     {pillar.title}
                   </h3>
-                  <p className="text-xs text-[#6E6557] font-medium mt-1 mb-6">
+                  <p className="text-base text-[#6E6557] font-medium mt-1 mb-6">
                     {pillar.tagline}
                   </p>
 
                   <ul className="space-y-3 mb-6">
                     {pillar.points.map((point, pIdx) => (
-                      <li key={pIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#4E473D]">
+                      <li key={pIdx} className="flex items-start gap-2.5 text-sm sm:text-base text-[#4E473D]">
                         <Check className="w-4 h-4 text-[#8E4A3B] shrink-0 mt-0.5" />
                         <span>{point}</span>
                       </li>
@@ -105,10 +105,10 @@ export const MethodologySection: React.FC = () => {
                 </div>
 
                 <div className="pt-4 border-t border-black/10">
-                  <span className="text-[11px] font-bold text-[#706657] uppercase tracking-wider block">
+                  <span className="text-sm font-bold text-[#706657] uppercase tracking-wider block">
                     Результат ступени:
                   </span>
-                  <p className="text-xs sm:text-sm font-semibold text-[#2C2721] mt-0.5">
+                  <p className="text-sm sm:text-base font-semibold text-[#2C2721] mt-0.5">
                     {pillar.result}
                   </p>
                 </div>
@@ -124,17 +124,17 @@ export const MethodologySection: React.FC = () => {
               <HeartHandshake className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="text-base sm:text-lg font-bold text-[#24211E] font-serif-heading">
+              <h4 className="text-lg sm:text-xl font-bold text-[#24211E] font-serif-heading">
                 Бережная атмосфера и уважение к вашему темпу
               </h4>
-              <p className="text-xs sm:text-sm text-[#635C51] mt-1 leading-relaxed">
+              <p className="text-sm sm:text-base text-[#635C51] mt-1 leading-relaxed">
                 На курсе нет школьного давления, строгих дедлайнов или стыда за ошибки.
                 Каждый куратор обучен деликатной поддержке взрослых учеников.
               </p>
             </div>
           </div>
 
-          <div className="flex items-center gap-2 text-xs font-semibold text-[#527056] bg-[#E9EFE8] px-4 py-2 rounded-xl shrink-0">
+          <div className="flex items-center gap-2 text-sm font-semibold text-[#527056] bg-[#E9EFE8] px-4 py-2 rounded-xl shrink-0">
             <Shield className="w-4 h-4" />
             <span>100% безопасная среда</span>
           </div>
