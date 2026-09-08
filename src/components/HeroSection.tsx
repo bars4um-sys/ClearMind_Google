@@ -38,7 +38,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenApplyModal, onOp
           </div>
 
           {/* Top Right Floating Sticky Note */}
-          <div className="relative z-10 self-end max-w-[170px] sm:max-w-[190px] bg-[#F9F5EC]/95 text-[#2D2A26] p-3 rounded-lg shadow-md rotate-2 border border-[#E6DEC8]/80 text-xs hidden sm:block">
+          <div className="absolute z-10 right-6 sm:right-8 top-[55%] max-w-[170px] sm:max-w-[190px] bg-[#F9F5EC]/95 text-[#2D2A26] p-3 rounded-lg shadow-md rotate-2 border border-[#E6DEC8]/80 text-xs hidden sm:block">
             <div className="font-handwriting text-sm leading-tight text-[#473F35]">
               Новые слова.<br />
               Новые горизонты.<br />
