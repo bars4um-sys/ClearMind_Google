@@ -3,15 +3,17 @@ import { TESTIMONIALS } from '../data/courseData';
 import { Star, Quote, Volume2, Play, CheckCircle2, Sparkles } from 'lucide-react';
 
 export const TestimonialsSection: React.FC = () => {
-  const [playingAudioId, setPlayingAudioId] = useState<string | null>(null);
-
-  const toggleAudio = (id: string) => {
-    if (playingAudioId === id) {
-      setPlayingAudioId(null);
-    } else {
-      setPlayingAudioId(id);
-    }
-  };
+  // АУДИО-ОТЗЫВЫ: временно скрыты (реальных аудиозаписей пока нет).
+  // Код оставлен на будущее — чтобы вернуть, раскомментируйте блок ниже.
+  // const [playingAudioId, setPlayingAudioId] = useState<string | null>(null);
+  //
+  // const toggleAudio = (id: string) => {
+  //   if (playingAudioId === id) {
+  //     setPlayingAudioId(null);
+  //   } else {
+  //     setPlayingAudioId(id);
+  //   }
+  // };
 
   return (
     <section id="reviews" className="py-14 sm:py-20 bg-[#F9F7F2]">
@@ -41,18 +43,16 @@ export const TestimonialsSection: React.FC = () => {
               <div>
                 {/* Author Info & Rating */}
                 <div className="flex items-center justify-between gap-4 mb-4">
-                  <div className="flex items-center gap-3.5">
-                    <img
-                      src={item.avatarUrl}
-                      alt={item.name}
-                      className="w-12 h-12 rounded-full object-cover border border-[#E0D5C3]"
-                    />
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-full bg-[#F4EDE2] text-[#8E4A3B] flex items-center justify-center shrink-0">
+                      <Quote className="w-5 h-5" />
+                    </div>
                     <div>
                       <h4 className="text-base font-bold text-[#2A241E] font-serif-heading">
-                        {item.name}, {item.age} лет
+                        Участница курса
                       </h4>
                       <p className="text-sm text-[#736B5E]">
-                        {item.profession} • {item.city}
+                        Отзыв по итогам курса
                       </p>
                     </div>
                   </div>
@@ -80,12 +80,12 @@ export const TestimonialsSection: React.FC = () => {
                 <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#E8DFC F] flex items-start gap-2 text-sm text-[#3E382E]">
                   <CheckCircle2 className="w-4 h-4 text-[#527056] shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold text-[#24211E]">Результат 12 недель: </span>
+                    <span className="font-semibold text-[#24211E]">Итог курса: </span>
                     <span>{item.keyResult}</span>
                   </div>
                 </div>
 
-                {/* Simulated Audio Testimonial Bar */}
+                {/* Simulated Audio Testimonial Bar — ВРЕМЕННО СКРЫТО (аудиозаписей пока нет).
                 {item.audioDuration && (
                   <button
                     onClick={() => toggleAudio(item.id)}
@@ -105,7 +105,7 @@ export const TestimonialsSection: React.FC = () => {
                     </div>
                     <span className="font-mono text-sm opacity-80">{item.audioDuration}</span>
                   </button>
-                )}
+                )} */}
               </div>
             </div>
           ))}

@@ -37,11 +37,6 @@ export interface SyllabusModule {
 
 export interface Testimonial {
   id: string;
-  name: string;
-  age: number;
-  profession: string;
-  city: string;
-  avatarUrl: string;
   quote: string;
   story: string;
   keyResult: string;
