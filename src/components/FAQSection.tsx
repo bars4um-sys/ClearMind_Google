@@ -37,7 +37,6 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onOpenApplyModal }) => {
             { id: 'all', label: 'Все вопросы' },
             { id: 'about', label: 'О методике и возрасте' },
             { id: 'process', label: 'Формат и время' },
-            { id: 'payment', label: 'Рассрочка и оплата' },
             { id: 'results', label: 'Результаты и гарантии' },
           ].map((cat) => (
             <button
