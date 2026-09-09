@@ -3,7 +3,7 @@ import { Heart, ShieldCheck, Mail, Phone, MessageSquare } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#24211E] text-[#D8D1C3] pt-14 pb-24 sm:pb-14 border-t border-[#38332E]">
+    <footer className="bg-[#24211E] text-[#D8D1C3] pt-14 pb-40 sm:pb-32 border-t border-[#38332E]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10 pb-10 border-b border-[#3D3731]">
           {/* Col 1: Brand */}
