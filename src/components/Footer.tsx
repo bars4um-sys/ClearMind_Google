@@ -77,13 +77,21 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-between text-sm text-[#8C8375] gap-3">
-          <p>
-            Образовательные материалы носят развивающий и общеобразовательный характер.
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 text-sm text-[#8C8375]">
+          <p className="text-center lg:text-left leading-snug">
+            Образовательные материалы носят развивающий<br />и общеобразовательный характер.
           </p>
-          <div className="flex items-center gap-1 font-handwriting text-sm text-[#E0D5C1]">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center leading-snug text-[#8C8375] hover:text-white transition-colors"
+          >
+            Дизайн и верстка<br />OCH-Studio Олега Чумаченко
+          </a>
+          <div className="flex items-center justify-center gap-2 font-handwriting text-2xl sm:text-3xl text-[#E0D5C1]">
             <span>Создано с заботой о ясности вашего ума</span>
-            <Heart className="w-3 h-3 text-[#A04F3F] fill-[#A04F3F]" />
+            <Heart className="w-6 h-6 text-[#A04F3F] fill-[#A04F3F]" />
           </div>
         </div>
       </div>
