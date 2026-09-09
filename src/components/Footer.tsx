@@ -82,7 +82,7 @@ export const Footer: React.FC = () => {
             Образовательные материалы носят развивающий<br />и общеобразовательный характер.
           </p>
           <a
-            href="#"
+            href="https://och-studio.ru"
             target="_blank"
             rel="noopener noreferrer"
             className="text-center leading-snug text-[#8C8375] hover:text-white transition-colors"
