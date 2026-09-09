@@ -35,10 +35,10 @@ export const TestimonialsSection: React.FC = () => {
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {TESTIMONIALS.map((item) => (
+          {TESTIMONIALS.map((item, index) => (
             <div
               key={item.id}
-              className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E5DEC F] shadow-xs flex flex-col justify-between hover:border-[#D5C7B3] transition-all card-hover-shadow"
+              className={`bg-white rounded-3xl p-6 sm:p-8 border border-[#E5DEC F] shadow-xs flex flex-col justify-between hover:border-[#D5C7B3] transition-all card-hover-shadow ${index === TESTIMONIALS.length - 1 ? 'md:col-span-2' : ''}`}
             >
               <div>
                 {/* Author Info & Rating */}
