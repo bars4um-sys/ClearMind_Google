@@ -55,13 +55,13 @@ export const StudyProcessSection: React.FC = () => {
         </div>
 
         {/* 5 Process Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {steps.map((item, index) => {
             const Icon = item.icon;
             return (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-5 sm:p-6 border border-[#E6DDCE] shadow-xs flex flex-col justify-between hover:border-[#A04F3F]/40 transition-all"
+                className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-white rounded-2xl p-5 sm:p-6 border border-[#E6DDCE] shadow-xs flex flex-col justify-between hover:border-[#A04F3F]/40 transition-all"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
